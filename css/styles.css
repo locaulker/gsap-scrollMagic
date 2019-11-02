@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap');
+
+:root {
+  --fontFamily: 'Open Sans', sans-serif;
+  --secondaryColor: #202428;
+  --secondaryHoverColor: #4d4d4d;
+  --primaryColor3: #ffce04;
+  --primaryColor2: #febd54;
+  --primaryColor: #e1cccb;
+  --secondaryTextColor: #62686e;
+  --white: #fff;
+}
+
+/* Global Styles */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--fontFamily);
+  font-size: 1.6rem;
+  text-rendering: optimizeLegibility;
+  text-rendering: optimizeSpeed;
+}
+
+.btn {
+  padding: .5rem 2rem;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  outline: 0;
+}
+.btn-border {
+  border: 1px solid;
+  box-sizing: border-box;
+}
+.btn-border {
+  border-color: var(--secondaryColor);
+}
+.btn-black {
+  background-color: var(--secondaryColor);
+  color: var(--white);
+}
+.btn-black:hover {
+  color: var(--white);
+  background-color: var(--secondaryHoverColor);
+}
+.large-btn {
+  font-size: 1.4rem;
+  padding: 1.4rem 2.8rem;
+}
+
+/* header styles */
+.header {
+  background-color: var(--primaryColor);
+  position: relative;
+}
+.header .header-brand {
+  font-size: 4.5rem;
+  font-weight: 800;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--white);
+}
+.header .header-navigation .wrapper {
+  display: flex;
+}
+.header .header-navigation .wrapper a {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--secondaryColor);
+}
+.text-wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.text-wrapper .text-inner {
+  position: relative;
+}
+.main-container .img-container,
+.main-container .sub-wrapper {
+  min-height: 70rem;
+  padding-top: 5rem;
+}
+.main-container .img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .sub-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-container .lead-heading {
+  font-size: 8rem;
+  font-weight: 900;
+}
+.main-container .lead-sub-heading {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.main-container .tryFree {
+  font-weight: 600;
+}
+.main-container .lead-description {
+  font-weight: 600;
+}

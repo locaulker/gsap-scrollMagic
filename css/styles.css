@@ -62,19 +62,37 @@ body {
   background-color: var(--primaryColor);
   position: relative;
 }
+.header nav {
+  box-shadow: 0 8px 6px -9px rgba(0, 0, 0, .5);
+  padding-left: 0;
+  padding-right: 0;
+}
 .header .header-brand {
   font-size: 4.5rem;
   font-weight: 800;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--white);
+  transition: all .3s ease-in;
+}
+.header .header-brand:hover {
+  /* color: var(--primaryColor); */
+  color: #fa766f;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--secondaryHoverColor);
 }
 .header .header-navigation .wrapper {
   display: flex;
+  align-items: center;
 }
 .header .header-navigation .wrapper a {
   font-weight: 600;
   font-size: 1.4rem;
   color: var(--secondaryColor);
+  padding-top: 6px;
+  transition: all .3s ease-in;
+}
+.header .header-navigation .wrapper a:hover {
+  color: #fa766f;
 }
 .text-wrapper {
   display: inline-block;
@@ -129,9 +147,9 @@ body {
   align-items: center;
   text-align: center;
 }
-.info .img-container img {
+/* .info .img-container img {
   color: var(--primaryColor);
-}
+} */
 .info h3 {
   font-weight: 800;
   display: flex;
@@ -143,4 +161,42 @@ body {
   text-align: center;
   font-weight: 600;
   color: var(--secondaryTextColor);
+}
+
+/* =========================================
+    GALLERY Section
+============================================ */
+.gallery {
+  /* background-color: #f2f2f2; */
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.container-fluid {
+  padding: 0;
+}
+
+.gallery .revealer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: var(--primaryColor);
+  display: none;
+}
+.gallery .img-container {
+  overflow: hidden;
+  position: relative;
+}
+.gallery .img-container .img-revealer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 206, 4, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  top: 0;
+  left: 0;
+  z-index: 2;
 }

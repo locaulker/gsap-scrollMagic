@@ -11,7 +11,10 @@
   --white: #fff;
 }
 
-/* Global Styles */
+
+/* =========================================
+    GLOBAL Styles
+============================================ */
 html {
   font-size: 62.5%;
 }
@@ -50,6 +53,10 @@ body {
   padding: 1.4rem 2.8rem;
 }
 
+
+/* =========================================
+    HEADER Styles
+============================================ */
 /* header styles */
 .header {
   background-color: var(--primaryColor);
@@ -58,7 +65,7 @@ body {
 .header .header-brand {
   font-size: 4.5rem;
   font-weight: 800;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--white);
 }
 .header .header-navigation .wrapper {
@@ -80,6 +87,7 @@ body {
 .main-container .img-container,
 .main-container .sub-wrapper {
   min-height: 70rem;
+  height: 100vh;
   padding-top: 5rem;
 }
 .main-container .img-container {
@@ -106,4 +114,33 @@ body {
 }
 .main-container .lead-description {
   font-weight: 600;
+}
+
+/* =========================================
+    INFO Section
+============================================ */
+.info {
+  padding: 10rem 0;
+}
+.info .block-info,
+.info .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.info .img-container img {
+  color: var(--primaryColor);
+}
+.info h3 {
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  letter-spacing: 1px;
+}
+.info p {
+  text-align: center;
+  font-weight: 600;
+  color: var(--secondaryTextColor);
 }

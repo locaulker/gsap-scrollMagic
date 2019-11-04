@@ -9,5 +9,5 @@
 
 
 // Gallery Section
-import GallerySection from './modules/GallerySection.js';
-const gallerySection = new GallerySection();
+// import GallerySection from './modules/GallerySection.js';
+// const gallerySection = new GallerySection();

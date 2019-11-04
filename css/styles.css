@@ -249,3 +249,28 @@ img {
   /* font-weight: 300; */
   color: var(--secondaryTextcolor);
 }
+
+
+/* =========================================
+    FOOTER Section
+============================================ */
+footer {
+  background-color: var(--primaryColor);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 3px solid var(--secondaryColor);
+}
+footer p {
+  padding: 3rem 0 1.5rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+footer a {
+  color: #fa766f;
+}
+footer a:hover {
+  text-decoration: none;
+  color: var(--secondaryColor);
+}
